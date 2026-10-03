@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savoria | Delicious Food Delivered</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+  <!-- Header section start -->
+   <header class="header" id="header">
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="logo">Savoria<span>.</span></a>
+        <div class="nav-links" id="navlinks">
+             <i class="fa fa-times close-btn" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="nav-action">
+            <button class="searchbtn" id="searchbtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <button class="userbtn" id="userbtn">
+                <i class="fa-regular fa-user"></i>
+            </button>
+            <button class="cartbtn" id="open-cart">
+                <i class="fa-solid fa-basket-shopping"></i>
+                <span class="cart-count" id="cart-count">0</span>
+            </button>
+            <i class="fa-solid fa-bars menu-btn" onclick="showMenu()"></i>
+            <!-- <i class="fa fa-bars menu-btn" onclick="showMenu()"></i> -->
+        </div>
+    </nav>
+    <div class="hero">
+        <div class="hero-content">
+        <h2 class="hero-subtitle">Wellcome to Savoria</h2>
+        <h1 class="hero-title">Delicious Meals <span>Deliverd Fast</span> To Your Door</h1>
+        <p class="hero-description"> Experience delicious flavors, fresh ingredients,<br>
+                    and unforgettable moments crafted by our expert chefs.</p>
+
+        <div class="hero-buttons">
+        <a href="contact.html" class="btn-primary">
+          Order Now   <i class="fa-solid fa-arrow-right"></i> </a>        
+         <a href="menu.html" class="btn-outline">Explore Menu</a>          
+        </div>    
+        </div>
+    </div>
+   </header> 
+  <!-- Header section end & about section start-->
+ 
+<section class="about" id="about">
+    <div class="about-container">
+        <div class="about-image">
+            <img src="assets/about-image.jpg" alt="Restaurant interior">
+            <div class="experience-badge">
+                <strong>15+</strong>
+                <span>Years of<br>Excellence</span>
+            </div>
+        </div>
+        <div class="about-content">
+            <span class="about-subtitle">Our Story</span>
+            <h2>Crafting Culinary Memories Since 2011 </h2>
+            <p class="about-text">Born from a passion for authentic flavors and local ingredients,
+              our kitchen brings together traditional recipes and modern techniques. 
+              Every dish is crafted to tell a story of heritage, community, and fine dining. </p>  
+            <!-- Features -->
+            <div class="about-features">
+                <div class="about-feature">
+                    <div class="feature-icon"><i class="fa-solid fa-seedling"></i></div>
+                    <div class="feature-content">
+                        <h3>Farm-Fresh Ingredients</h3>
+                        <p>Fresh, locally sourced ingredients  in every dish.</p>
+                    </div>
+                </div>
+                <div class="about-feature">
+                    <div class="feature-icon"> <i class="fa-solid fa-utensils"></i></div>
+                    <div class="feature-content">
+                        <h3>Master Chefs </h3>
+                        <p>Experienced chefs creating every dish with passion.   </p>
+                    </div>
+                </div>
+                <div class="about-feature">
+                    <div class="feature-icon"><i class="fa-solid fa-heart"></i></div>
+                    <div class="feature-content">
+                        <h3>Made With Love</h3>
+                        <p>Every meal is prepared with care  and attention to detail.</p>
+                    </div>
+                </div>
+                <div class="about-feature">
+                    <div class="feature-icon"> <i class="fa-solid fa-star"></i> </div>
+                    <div class="feature-content">
+                        <h3>Exceptional Service</h3>
+                        <p> Friendly service that makes you feel right at home.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Button -->
+            <a href="contact.html" class="about-btn">Reserve a Table
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+   <!-- Aboout section end & menu section start-->
+<section class="menu-section section-padding" id="menu">
+    <div class="container">
+        <div class="section-header text-center">
+            <span class="section-subtitle">Our Menu</span>
+            <h2>Explore Our <span>Dishes</span></h2>
+            <p>Select your favorite meal and add it to your order.</p>
+        </div>
+        <!-- Categories Filter -->
+        <div class="category-filters">
+            <button class="filter-btn active" data-category="all">All Items</button>  
+            <button class="filter-btn" data-category="starters">Starters</button>
+            <button class="filter-btn" data-category="main">Main</button>
+            <button class="filter-btn" data-category="drinks">Drinks</button>        
+        </div>
+<div class="item">
+    <div class="card" data-category="starters">
+        <div class="card-image">
+            <img src="assets/starters1.jpg" alt="Bruschetta">    
+        </div>
+        <div class="card-content">
+            <h4 class="card-title">Crispy Chicken Wings</h4>
+            <p class="card-description">
+              Golden, crispy chicken wings seasoned with aromatic spices and fried to perfection. 
+              Served hot with our signature dipping sauce, they deliver juicy, flavorful bites in every mouthful.
+            </p>
+            <div class="price-order">
+                <div class="price">
+                    <span>$</span>22.54
+                </div>
+                <button class="order-btn">Order Now</button>
+            </div>
+        </div>
+    </div>
+    <!-- Product 2 -->
+    <div class="card" data-category="main">
+        <div class="card-image">
+            <img  src="assets/main1.jpg" alt="Grilled Chicken">
+        </div>
+        <div class="card-content">
+            <h4 class="card-title">BBQ Chicken            </p>
+            <div class="price-order">
+                <div class="price">
+                    <small>$</small>28.99
+                </div>
+                <button class="order-btn">Order Now</button>
+            </div>
+        </div>
+    </div>
+    <!-- Product 3 -->
+    <div class="card" data-category="drinks">
+        <div class="card-image">
+            <img src="assets/drink1.jpg" alt="Fresh Orange Juice"></div>
+        <div class="card-content">
+            <h4 class="card-title"> Classic Fresh Lemonade </h4>
+            <p class="card-description">
+                Freshly squeezed orange juice served
+                chilled.</p>
+            <div class="price-order">
+                <div class="price">
+                    <small>$</small>8.50
+                </div>
+                <button class="order-btn"> Order Now</button>  
+            </div>
+        </div>
+    </div>
+
+      <div class="card" data-category="starters">
+        <div class="card-image">
+            <img src="assets/starters2.jpg" alt="Bruschetta">    
+        </div>
+        <div class="card-content">
+            <h4 class="card-title">Garlic Bread Superme</h4>
+            <p class="card-description">
+                Toasted bread topped with fresh tomatoes,
+                basil and olive oil.
+            </p>
+            <div class="price-order">
+                <div class="price">
+                    <small>$</small>22.54
+                </div>
+                <button class="order-btn">Order Now</button>
+            </div>
+        </div>
+    </div>
+    <!-- Product 2 -->
+    <div class="card" data-category="main">
+        <div class="card-image">
+            <img  src="assets/main2.jpg" alt="Grilled Chicken">
+        </div>
+        <div class="card-content">
+            <h4 class="card-title">Stuffed Garlic Bread</h4>
+            <p class="card-description">
+                Tender grilled chicken served with
+                vegetables and special sauce.
+            </p>
+            <div class="price-order">
+                <div class="price">
+                    <small>$</small>28.99
+                </div>
+                <button class="order-btn">Order Now</button>
+            </div>
+        </div>
+    </div>
+    <!-- Product 3 -->
+    <div class="card" data-category="drinks">
+        <div class="card-image">
+            <img src="assets/drinks2.jpg" alt="Fresh Orange Juice"></div>
+        <div class="card-content">
+            <h4 class="card-title">Strawbery Lemonade</h4>
+            <p class="card-description">
+                Freshly squeezed orange juice served
+                chilled.</p>
+            <div class="price-order">
+                <div class="price">
+                    <small>$</small>8.50
+                </div>
+                <button class="order-btn"> Order Now</button>  
+            </div>
+        </div>
+    </div>
+      <div class="card" data-category="starters">
+        <div class="card-image">
+            <img src="assets/starters3.jpg" alt="Bruschetta">    
+        </div>
+        <div class="card-content">
+            <h4 class="card-title">Bafalo Chicken Tenders</h4>
+            <p class="card-description">
+                Toasted bread topped with fresh tomatoes,
+                basil and olive oil.
+            </p>
+            <div class="price-order">
+                <div class="price">
+                    <small>$</small>22.54
+                </div>
+                <button class="order-btn">Order Now</button>
+            </div>
+        </div>
+    </div>
+    <!-- Product 2 -->
+    <div class="card" data-category="main">
+        <div class="card-image">
+            <img  src="assets/main3.jpg" alt="Grilled Chicken">
+        </div>
+        <div class="card-content">
+            <h4 class="card-title">Crispy Prawn Bites</h4>
+            <p class="card-description">
+                Tender grilled chicken served with
+                vegetables and special sauce.
+            </p>
+            <div class="price-order">
+                <div class="price">
+                    <small>$</small>28.99
+                </div>
+                <button class="order-btn">Order Now</button>
+            </div>
+        </div>
+    </div>
+    <!-- Product 3 -->
+    <div class="card" data-category="drinks">
+        <div class="card-image">
+            <img src="assets/drinks3.jpg" alt="Fresh Orange Juice"></div>
+        <div class="card-content">
+            <h4 class="card-title">Tropical Fruit Punch</h4>
+            <p class="card-description">
+                Freshly squeezed orange juice served
+                chilled.</p>
+            <div class="price-order">
+                <div class="price">
+                    <small>$</small>8.50
+                </div>
+                <button class="order-btn"> Order Now</button>  
+            </div>
+        </div>
+    </div>  
+   </div>
+    </div>
+</section>
+<!-- servicess -->
+ 
+<section class="services-section section-padding" id="services">
+    <div class="container">
+        <div class="section-header text-center">
+            <span class="section-subtitle">Our Services</span>
+            <h2>We Make Your <span>Dining Special</span> </h2>
+            <p>From delicious meals to exceptional service
+                we make every dining experience memorable. </p> 
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fa-solid fa-utensils"></i>
+                </div>
+                <h3>Fine Dining</h3>
+                <p> Enjoy delicious dishes prepared with
+                    fresh ingredients by our professional chefs.</p>
+                <a href="#menu" class="service-link">
+                    Explore Menu
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+            <!-- Service 2 -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fa-solid fa-truck-fast"></i>
+                </div>
+                <h3>Fast Delivery</h3>
+                <p>Order your favorite meals online and
+                    enjoy fast and reliable food delivery. </p>
+                <a href="#menu" class="service-link"> Order Now
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+            <!-- Service 3 -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fa-solid fa-calendar-days"></i>
+                </div>
+                <h3>Event Catering</h3>
+                <p> Make your special occasions memorable
+                    with our professional catering service. </p>
+                <a href="#contact" class="service-link">
+                    Book Event
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fa-solid fa-cake-candles"></i>
+                </div>
+                <h3>Private Events</h3>
+                <p>
+                    Celebrate birthdays, parties and special
+                    moments in a comfortable atmosphere.
+                </p>
+                <a href="#contact" class="service-link">
+                    Reserve Table
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- =================================
+     CONTACT SECTION
+================================= -->
+
+<section class="contact-section section-padding" id="contact">
+    <div class="container">
+        <div class="section-header text-center">
+            <span class="section-subtitle">Contact Us</span>
+            <h2> Let's <span>Connect</span> </h2>
+            <p>
+             Have a question or want to make a reservation?
+                We'd love to hear from you.
+            </p>
+        </div>
+        <div class="contact-wrapper">
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <div class="contact-info-header">
+                    <span>Get In Touch</span>
+                    <h3> Visit us and enjoy
+                        <span>great food.</span>  </h3> 
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div>
+                        <h4>Our Location</h4>
+                        <p> 123 Food Street,<br>
+                            New York, NY 10001
+                        </p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div>
+                        <h4>Phone Number</h4>
+                        <p>
+                            +1 234 567 890
+                        </p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h4>Email Address</h4>
+                        <p>
+                            hello@restaurant.com
+                        </p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <div>
+                        <h4>Opening Hours</h4>
+                        <p>
+                            Monday - Sunday<br>
+                            10:00 AM - 11:00 PM
+                        </p>
+                    </div>
+                </div>
+
+
+                <!-- Social Media -->
+
+                <div class="contact-social">
+
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" aria-label="Twitter">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                    <a href="#" aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                </div>
+
+            </div>
+            <!-- Contact Form -->
+            <div class="contact-form-wrapper">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name  </label>
+                            <input type="text" id="name"  placeholder="Enter your name">
+                            <small class="error-message"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="email"> Email Address </label>
+                            <input type="email" id="email" placeholder="Enter your email">
+                            <small class="error-message"></small>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text"id="subject" placeholder="What is this about?">
+                        <small class="error-message"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="message"> Message</label>
+                        <textarea  id="message" rows="6" placeholder="Write your message..." ></textarea>
+                        <small class="error-message"></small>
+                    </div>
+                    <button type="submit" class="contact-btn">Send Message
+                      <i class="fa-solid fa-paper-plane"></i>   </button>
+
+                    <div  class="form-success"id="formSuccess">
+                        <i class="fa-solid fa-circle-check"></i>
+                        Thank you!
+                        Your message has been sent successfully.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- =================================
+     FOOTER
+================================= -->
+
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Footer About -->
+        <div class="footer-column footer-about">
+            <a href="#home" class="footer-logo">Savoria<span>.</span> </a>
+            <p>Delicious food, warm hospitality and
+                unforgettable dining experiences.
+                Join us for a meal you'll remember. </p>
+            <div class="footer-social">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#">  <i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"> <i class="fa-brands fa-youtube"></i></a>    
+            </div>
+        </div>
+        <!-- Quick Links -->
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li> <a href="#home">Home</a> </li>
+                <li> <a href="#about">About</a> </li>
+                <li> <a href="#services">Services</a> </li>
+                <li> <a href="#menu">Menu</a></li>
+                <li> <a href="#contact">Contact</a>    </li>
+            </ul>
+        </div>
+        <!-- Services -->
+        <div class="footer-column">
+            <h3>Our Services</h3>
+            <ul> 
+                <li> <a href="#services"> Fine Dining</a></li>
+                <li> <a href="#services"> Food Delivery</a></li>
+                <li> <a href="#services"> Event Catering</a></li>
+                <li> <a href="#services"> Private Events</a></li>
+            </ul>
+        </div>
+        <!-- Newsletter -->
+        <div class="footer-column footer-newsletter">
+            <h3>Newsletter</h3>
+            <p> Subscribe to receive our latest offers,
+                news and special discounts.</p>
+            <form id="newsletterForm">
+                <div class="newsletter-input">
+                    <input  type="email"placeholder="Your email address">
+                    <button type="submit">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </div>
+                <small id="newsletterMessage"></small>
+            </form>
+        </div>
+    </div>
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <div class="footer-bottom-container">
+            <p> &copy; 2026 Savoria. All Rights Reserved. </p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>0
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- back to top button -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>

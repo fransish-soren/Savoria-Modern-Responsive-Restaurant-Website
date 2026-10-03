@@ -1,0 +1,85 @@
+  :root {
+    --bg-light: #e0dcd7;      
+    --bg-white: #f0f4f8;     
+    --bg-dark: #181212;       
+    --primary: #e72019;      
+    --text-dark: #130202;
+    --text-light: #f8f8f8;
+    --heading-font: "DM Serif Display", serif;
+    --body-font: "Outfit", sans-serif;
+    --fs-xs: 0.875rem;
+    --fs-base: 1rem;
+    --fs-xl: clamp(1.5rem, 2vw, 2.5rem);
+    --fs-xxl: clamp(2rem, 4vw, 3rem);
+    --fw-normal: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+    /* Spacing */
+    --space-xs: .125rem;
+    --space-sm: 0.0625rem;
+    /* Border Radius */
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 16px;
+    --radius-round: 50%;
+    /* Shadows */
+    --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 5px 20px rgba(0, 0, 0, 0.12);
+    --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.15);
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+    /* Container */
+    --container-width: 1200px;
+  }
+ #about-header {
+    min-height:100dvh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)),url("multi/about-bg.jpg") center/cover;
+}  
+.page {
+    /* min-height: 100vh; */
+     padding: 150px 7% 80px; 
+    /* padding: 100px 0 60px; */
+    text-align: center;
+    /* scroll-margin-top: 80px;  */
+}
+.page h2 {
+    font-weight: var(--fw-semibold);
+    font-size: var(--fs-xl);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+.page h1 {
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-xxl);
+    color: var(--text-light);
+     margin-bottom: 15px;
+}
+.page h1 span {
+    color: var(--primary);
+}
+.page p {
+    font-size: var(--fs-base);
+    font-weight: var(--fw-medium);
+    color: var(--text-light);
+}
+#menu-header {
+    min-height:100dvh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)),url("multi/menu-bg.jpg") center/cover;
+}
+#service-header {
+    min-height:100dvh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)),url("multi/services-bg.jpg") center/cover;
+}
+#contact-header {
+    min-height:100dvh;
+    width: 100%;
+     background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)),url("multi/contact-bg.jpg") center/cover;  
+}

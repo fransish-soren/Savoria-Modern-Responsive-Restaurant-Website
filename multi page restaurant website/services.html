@@ -1,0 +1,203 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savoria | Delicious Food Delivered</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+ 
+ <!-- Header section start -->
+   <header class="header" id="service-header">
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="logo">Savoria<span>.</span></a>
+        <div class="nav-links" id="navlinks">
+             <i class="fa fa-times close-btn" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="nav-action">
+            <button class="searchbtn" id="searchbtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <button class="userbtn" id="userbtn">
+                <i class="fa-regular fa-user"></i>
+            </button>
+            <button class="cartbtn" id="open-cart">
+                <i class="fa-solid fa-basket-shopping"></i>
+                <span class="cart-count" id="cart-count">0</span>
+            </button>
+            <i class="fa-solid fa-bars menu-btn" onclick="showMenu()"></i>
+            <!-- <i class="fa fa-bars menu-btn" onclick="showMenu()"></i> -->
+        </div>
+    </nav>
+
+        <div class="page">
+            <h2> Our Servicess</h2>
+            <h1> We Make Every
+                <span>Moment Special.</span></span></h2>  
+            <p> Dine-in, takeaway, catering and private
+                events are available for our guests.</p>
+        </div>
+
+  </header> 
+<!-- servicess -->
+ 
+<section class="services-section section-padding" id="services">
+    <div class="container">
+        <div class="section-header text-center">
+            <span class="section-subtitle">Our Services</span>
+            <h2>We Make Your <span>Dining Special</span> </h2>
+            <p>From delicious meals to exceptional service
+                we make every dining experience memorable. </p> 
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fa-solid fa-utensils"></i>
+                </div>
+                <h3>Fine Dining</h3>
+                <p> Enjoy delicious dishes prepared with
+                    fresh ingredients by our professional chefs.</p>
+                <a href="#menu" class="service-link">
+                    Explore Menu
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+
+            <!-- Service 2 -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fa-solid fa-truck-fast"></i>
+                </div>
+                <h3>Fast Delivery</h3>
+                <p>Order your favorite meals online and
+                    enjoy fast and reliable food delivery. </p>
+                <a href="#menu" class="service-link"> Order Now
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+
+            <!-- Service 3 -->
+            <div class="service-card">
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-calendar-days"></i>
+                </div>
+                <h3>Event Catering</h3>
+                <p> Make your special occasions memorable
+                    with our professional catering service. </p>
+                <a href="#contact" class="service-link">
+                    Book Event
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+            <!-- Service 4 -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fa-solid fa-cake-candles"></i>
+                </div>
+                <h3>Private Events</h3>
+                <p>
+                    Celebrate birthdays, parties and special
+                    moments in a comfortable atmosphere.
+                </p>
+                <a href="#contact" class="service-link">
+                    Reserve Table
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+  
+<!-- =================================
+     FOOTER
+================================= -->
+
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Footer About -->
+        <div class="footer-column footer-about">
+            <a href="#home" class="footer-logo">Savoria<span>.</span> </a>
+            <p>Delicious food, warm hospitality and
+                unforgettable dining experiences.
+                Join us for a meal you'll remember. </p>
+            <div class="footer-social">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#">  <i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"> <i class="fa-brands fa-youtube"></i></a>    
+            </div>
+        </div>
+        <!-- Quick Links -->
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li> <a href="#home">Home</a> </li>
+                <li> <a href="#about">About</a> </li>
+                <li> <a href="#services">Services</a> </li>
+                <li> <a href="#menu">Menu</a></li>
+                <li> <a href="#contact">Contact</a>    </li>
+            </ul>
+        </div>
+        <!-- Services -->
+        <div class="footer-column">
+            <h3>Our Services</h3>
+            <ul> 
+                <li> <a href="#services"> Fine Dining</a></li>
+                <li> <a href="#services"> Food Delivery</a></li>
+                <li> <a href="#services"> Event Catering</a></li>
+                <li> <a href="#services"> Private Events</a></li>
+            </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-column footer-newsletter">
+            <h3>Newsletter</h3>
+            <p> Subscribe to receive our latest offers,
+                news and special discounts.</p>
+            <form id="newsletterForm">
+                <div class="newsletter-input">
+                    <input  type="email"placeholder="Your email address">
+                    <button type="submit">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </div>
+                <small id="newsletterMessage"></small>
+            </form>
+        </div>
+    </div>
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <div class="footer-bottom-container">
+            <p> &copy; 2026 Savoria. All Rights Reserved. </p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- back to top button -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+<script src="script.js"></script>
+</body>
+</html>
